@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- bu uzining meta tagi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bu bootstrapga uxshab w3School ni ulash -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- icon chiqarish uchun ulangan link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css ulash -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>sideBar and navBar</title>
+</head>
+
+<body>
+
+    <!-- side bar -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="mySidebar">
+        <!-- close btn -->
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+            <iconify-icon icon="zondicons:close"></iconify-icon>
+            <span>Close</span>
+        </button>
+
+        <a href="#" class="w3-bar-item w3-button">
+            <i class="fa fa-home"></i>
+            Dashboard
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <iconify-icon icon="simple-line-icons:event"></iconify-icon>
+            Event Management
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <iconify-icon icon="carbon:user-avatar-filled"></iconify-icon>
+            Professors
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <iconify-icon icon="mdi:account-student-outline"></iconify-icon>
+            Students
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <iconify-icon icon="icons8:student"></iconify-icon>
+            Coursess
+        </a>
+        <a href="#" class="w3-bar-item w3-button">
+            <iconify-icon icon="guidance:library"></iconify-icon>
+            Librariy
+        </a>
+    </div>
+
+    <!-- body qism -->
+    <div id="main">
+        <div class="w3-teal navbar__main">
+            <!-- main logo -->
+            <!-- <span style="margin-left: 1rem; margin-right: 1rem; font-size: 3rem;">
+                <iconify-icon icon="icons8:student"></iconify-icon>
+            </span> -->
+
+            <!-- side bar ochuvchi btn -->
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
+                <iconify-icon icon="ic:outline-menu"></iconify-icon>
+            </button>
+
+            <!-- navbar -->
+            <div class="w3-container navbar__box" style="display: inline-block;">
+                <input type="text" placeholder="🔍 Search...">
+                <div style="display: inline;">
+                    <span>
+                        <iconify-icon icon="mdi:bell-notification-outline" width="40"></iconify-icon>
+                    </span>
+                    <span>
+                        <iconify-icon icon="gg:profile" width="40"></iconify-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- body container -->
+        <div class="w3-container main__body">
+            <h1>hello world</h1>
+            <h1>sidebar and navbar Dashboard qism uchun</h1>
+        </div>
+
+    </div>
+
+    <!-- side bar ni ochish va yopish uchun js code -->
+    <script>
+        function w3_open() {
+            // document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            // document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+    <!-- icon js ulash -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</body>
+
+</html>
