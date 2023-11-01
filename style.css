@@ -44,7 +44,7 @@
 
 /* END main navbar style */
 
-/* open btn style */
+/* open btn btn style */
 #openNav {
     /* margin-bottom: .5rem; */
     font-size: 2rem !important;
@@ -64,10 +64,10 @@
 }
 
 /* close btn style */
-#mySidebar button {
+#closeBtn {
     background-color: #00000000;
     color: white;
-    font-size: 3rem !important;
+    font-size: 2.65rem !important;
     transition: all .3s;
 
     &:hover {
@@ -75,24 +75,30 @@
     }
 }
 
-/* side bar a taglariga style */
-#mySidebar a {
-    background-color: #00000000 !important;
-    color: white;
-    font-size: 1.2rem !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    transition: all .3s;
-
-    &:hover {
-        background-color: #00e5ffcc !important;
-    }
-
-    &:focus {
-        background-color: #006effd8 !important;
-    }
+/* dropdown div style */
+.sidebar__dropdown {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 300px;
 }
 
+.sidebar__dropdown button {
+    font-size: 1.5rem;
+    width: 100% !important;
+    letter-spacing: 1px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.sidebar__dropdown ul {
+    width: 100%;
+    margin-left: 2.3rem !important;
+    margin-top: .3rem !important;
+}
+
+.sidebar__dropdown ul button {
+    font-size: 1rem;
+}
 /* END side bar style */
 
 /* start body container style */
